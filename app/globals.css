@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --success: #16a34a;
+  --bg: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-card: #ffffff;
+  --text: #0f172a;
+  --text-secondary: #64748b;
+  --border: #e2e8f0;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: var(--bg-secondary);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.copy-btn {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+  cursor: pointer;
+  background: none;
+  border: 1px solid transparent;
+}
+
+.copy-btn:hover {
+  color: var(--primary);
+  background: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+.copy-btn.copied {
+  color: var(--success);
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}

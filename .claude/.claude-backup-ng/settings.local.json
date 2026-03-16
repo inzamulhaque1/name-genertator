@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.fakexy.com)",
+      "WebFetch(domain:www.fakenamegenerator.com)",
+      "WebFetch(domain:www.duplichecker.com)",
+      "WebFetch(domain:homepage.net)",
+      "WebSearch",
+      "WebFetch(domain:fakexy.com)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --eslint --no-src-dir --import-alias \"@/*\" --use-npm)",
+      "Bash(mv .claude ../.claude-backup-ng)"
+    ]
+  }
+}
